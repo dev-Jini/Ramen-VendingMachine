@@ -72,7 +72,7 @@ public class AdminController {
 	public void deleteRamen(String ramenName) {
 		try {
 			service.ramenListDelete(ramenName);
-			EndView.messageView("삭제 되었습니다.");
+			EndView.messageView("삭제되었습니다.");
 			log.info();
 		} catch (NotExistException e) {
 			FailView.failMessageView(e.getMessage());
